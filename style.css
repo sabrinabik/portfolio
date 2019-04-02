@@ -32,12 +32,12 @@ html, body {
 }
 
 .row__big {
-    margin-top: 50px;
+    margin-top: 40px;
     height: 480px;
 }
 
 .row__small {
-    margin-top: 50px;
+    margin-top: 40px;
     height: 320px;
 }
 
@@ -45,14 +45,20 @@ html, body {
     flex-direction: column;
 }
 
-.row__personal > h1, .row__personal > p {
-    font-weight: normal;
-    margin: 0;
+.row__personal > h1 {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #646464;
 }
 
 .row__personal > a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #646464;
     text-decoration: none;
-    color: #ddd;
 }
 
 .item__big {
@@ -60,7 +66,7 @@ html, body {
 }
 
 .item__small {
-    flex: 0 1 49%;
+    flex: 0 1 48%;
 }
 
 .page {
@@ -86,15 +92,13 @@ html, body {
 }
 
 .info {
-    font-size: 18px;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    height: 40px;
-    line-height: 40px;
-
     margin-top: 10px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
 }
 
 .info__github {
