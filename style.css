@@ -3,15 +3,25 @@
 }
 
 html, body {
+    font-family: 'Fira Sans', sans-serif;
     height: 100%;
     margin: 0;
 }
 
 .container {
-    display: flex;
-    align-items: center;
+    margin: 0 auto;
     padding: 0 40px;
-    min-height: 100%; 
+    min-height: 100%;
+    max-width: 1170px;
+}
+
+.wrapper {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -21,25 +31,78 @@ html, body {
     justify-content: space-between;
 }
 
+.row__big {
+    margin-top: 50px;
+    height: 480px;
+}
+
+.row__small {
+    margin-top: 50px;
+    height: 320px;
+}
+
+.row__personal {
+    flex-direction: column;
+}
+
+.row__personal > h1, .row__personal > p {
+    font-weight: normal;
+    margin: 0;
+}
+
+.row__personal > a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.item__big {
+    flex: 1 1 100%;
+}
+
+.item__small {
+    flex: 0 1 49%;
+}
+
 .page {
-    flex: 1 1 30%;
-    height: 270px;
-    max-width: 480px;
-    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(160, 55, 55, 0.12);
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    display: block;
 }
 
 .page:hover {
     box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
 
-.pets {
+.page__pets {
     background-image: url(img/pets.png);
 }
 
-.diez {
+.page__diez {
     background-image: url(img/diez.png);
+}
+
+.info {
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 40px;
+    line-height: 40px;
+
+    margin-top: 10px;
+}
+
+.info__github {
+    display: block;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.info__github > img {
+    height: 30px;
 }
